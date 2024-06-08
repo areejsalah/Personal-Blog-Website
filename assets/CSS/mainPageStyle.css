@@ -1,0 +1,90 @@
+@import "card.css";
+@import "sidebar.css";
+@import "header.css";
+
+.container{
+    
+    display: grid;
+   height: 180vh;
+    grid-template-columns: 420px;
+  grid-template-rows: 100px 200px 1000px 60px;
+    grid-gap:25px;
+    grid-template-areas : 
+    "hd"
+    "sd"
+    "main"
+    "ft" ;
+    
+}
+.header{
+    grid-area: hd;
+}
+.sideBar{
+    grid-area: sd;
+}
+.blogPosts{
+    grid-area: main;
+}
+.footer{
+    grid-area: ft;
+}
+
+
+.footer{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #777474;
+    border-radius: 8px;
+}
+.footer h4{
+    padding-left: 10px;
+    color: white;
+    
+}
+.btn{
+    border: none;
+    background-color: #AD3959;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.blogPosts{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+@media(min-width:900px){
+   
+    .container{
+        height: 90vh;
+        display: grid;
+       grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 80px 550px 60px;
+        grid-gap:15px;
+        grid-template-areas : 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    .blogPosts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 2px solid lightblue;
+       
+      }
+      .card{
+        margin: auto;
+        justify-content: center;
+      }
+      
+      
+}
+   
+  

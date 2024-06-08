@@ -1,0 +1,34 @@
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    font-family: arial;
+    height: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    .photoCard{
+        width:250px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .card a button{
+       margin-left: 80px;
+        margin-bottom: 5px;
+    }
+    .card h3{
+        color: #008CBA;
+    }
+    
+    .card {
+        width: 250px;
+        height: 310px;
+        border-radius: 10px;
+        background-color: #DDDADA;
+    }
+    .card a{
+        text-decoration: none;
+    }
